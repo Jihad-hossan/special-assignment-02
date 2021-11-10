@@ -1,0 +1,860 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, button, a {
+  font-family: 'Lato', sans-serif;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+  padding-top: 0;
+  background-color: #ffffff;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.navbar .navbar-brand {
+  padding-top: 0;
+}
+
+.navbar .collapse .navbar-nav .nav-item .nav-link {
+  text-transform: uppercase;
+  font-weight: 600;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.navbar .collapse .navbar-nav .nav-item .nav-link:hover {
+  color: #333333;
+}
+
+.banner {
+  background: url("../image/banner-bg.png") no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.banner .banner-text h1 {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.banner .banner-text p {
+  padding-bottom: 3rem;
+  color: #ffffff;
+}
+
+.banner .banner-text a {
+  text-decoration: none;
+  padding: .5rem 1.5rem;
+  background-color: #ffffff;
+  color: #8e8e8e;
+  font-weight: 600;
+  border: 1px solid #ffffff;
+  display: inline-block;
+  margin-bottom: 5rem;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.banner .banner-text a span {
+  margin-left: 1rem;
+}
+
+.banner .banner-text a:hover {
+  color: #333333;
+  border-color: #333333;
+}
+
+.welcome-to-nipro .welcome-card {
+  border: 1px solid #cccccc;
+  padding: 4rem 1.3rem;
+  margin-top: 2rem;
+  -webkit-transition: .4s;
+  transition: .4s;
+  position: relative;
+}
+
+.welcome-to-nipro .welcome-card .icon-top {
+  position: absolute;
+  top: -5%;
+  left: 40%;
+  background-color: #ffffff;
+}
+
+.welcome-to-nipro .welcome-card p {
+  color: #8e8e8e;
+}
+
+.welcome-to-nipro .welcome-card a {
+  text-decoration: none;
+  color: #8e8e8e;
+  margin-top: 1.5rem;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-transition: .4s;
+  transition: .4s;
+  font-weight: 600;
+}
+
+.welcome-to-nipro .welcome-card a span {
+  padding-left: 1rem;
+  display: inline-block;
+}
+
+.welcome-to-nipro .welcome-card:hover {
+  border-color: #333333;
+}
+
+.welcome-to-nipro .welcome-card:hover a {
+  color: #333333;
+}
+
+.about-us .about-us-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about-us .about-us-inner .img {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+}
+
+.about-us .about-us-inner .text {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.about-us .about-us-inner .text p {
+  color: #8e8e8e;
+}
+
+.about-us .about-us-inner .text button {
+  font-weight: 600;
+  color: #8e8e8e;
+  padding: .5rem 1.5rem;
+  border: 1px solid #8e8e8e;
+  border-radius: none;
+  margin-top: 2rem;
+  background: transparent;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.about-us .about-us-inner .text button span {
+  margin-left: 1rem;
+}
+
+.about-us .about-us-inner .text button:hover {
+  color: #333333;
+  border-color: #333333;
+}
+
+.recent-work {
+  background-color: #f8f8f8;
+  padding-bottom: 5rem;
+}
+
+.recent-work ul {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.recent-work ul li a {
+  color: #8e8e8e;
+}
+
+.recent-work ul li a:hover, .recent-work ul li a:focus {
+  color: #333333;
+  border: 1px solid #333333;
+}
+
+.recent-work .tab-content .img {
+  margin-top: 2rem;
+  position: relative;
+}
+
+.recent-work .tab-content .img .plus-icon {
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  -webkit-transition: translate(-50%, -50%);
+  transition: translate(-50%, -50%);
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  opacity: 0;
+}
+
+.recent-work .tab-content .img .project-tile {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-left: 3rem;
+  padding-top: .5rem;
+  background-color: #ffffff;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  opacity: 0;
+}
+
+.recent-work .tab-content .img .project-tile h6 {
+  font-weight: 600;
+}
+
+.recent-work .tab-content .img .project-tile p {
+  color: #8e8e8e;
+}
+
+.recent-work .tab-content .img .recent-img {
+  width: 100%;
+}
+
+.recent-work .tab-content .img:hover .plus-icon {
+  opacity: 1;
+}
+
+.recent-work .tab-content .img:hover .project-tile {
+  opacity: 1;
+}
+
+.why-choose-nipro {
+  padding-bottom: 3rem;
+}
+
+.why-choose-nipro .item-of-why-choose {
+  margin-bottom: 2rem;
+}
+
+.why-choose-nipro .item-of-why-choose h6 {
+  color: #8e8e8e;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.why-choose-nipro .item-of-why-choose h6 span {
+  margin-right: 1.5rem;
+}
+
+.why-choose-nipro .item-of-why-choose p {
+  color: #8e8e8e;
+}
+
+.why-choose-nipro .item-of-why-choose .hr {
+  border: 1.5px solid #8e8e8e;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.why-choose-nipro .item-of-why-choose:hover h6 {
+  color: #333333;
+}
+
+.why-choose-nipro .item-of-why-choose:hover p {
+  color: #333333;
+}
+
+.why-choose-nipro .item-of-why-choose:hover .hr {
+  border-color: black;
+}
+
+.who-work-with-us {
+  background: url("../image/who-work-with-bg.png") no-repeat center center;
+  background-size: cover;
+  padding-bottom: 5rem;
+}
+
+.who-work-with-us .card {
+  border: none;
+  margin-top: 2rem;
+}
+
+.best-pricing {
+  padding-bottom: 3rem;
+}
+
+.best-pricing .best-pricing-item {
+  border: 2px solid #cccccc;
+  padding: 3rem 2rem 2rem;
+  margin-top: 2rem;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  position: relative;
+  cursor: pointer;
+}
+
+.best-pricing .best-pricing-item .top {
+  position: absolute;
+  top: -3%;
+  left: 10%;
+  background: #ffffff;
+  font-weight: 700;
+}
+
+.best-pricing .best-pricing-item .link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.best-pricing .best-pricing-item h2 {
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.best-pricing .best-pricing-item h2 span {
+  font-size: 1rem;
+  color: #8e8e8e;
+}
+
+.best-pricing .best-pricing-item p {
+  color: #8e8e8e;
+}
+
+.best-pricing .best-pricing-item button {
+  width: 100%;
+  border: 1px solid #cccccc;
+  margin-top: 1.5rem;
+  padding: .5rem;
+  background: transparent;
+  color: #8e8e8e;
+  font-weight: 600;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.best-pricing .best-pricing-item button span {
+  margin-left: 1rem;
+}
+
+.best-pricing .best-pricing-item:hover {
+  border-color: #8e8e8e;
+}
+
+.best-pricing .best-pricing-item:hover button {
+  border-color: #333333;
+  color: #333333;
+}
+
+.buy-html-template {
+  background-color: #f8f8f8;
+  padding: 2rem 0;
+}
+
+.buy-html-template .div-for-flex {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.buy-html-template .div-for-flex p {
+  margin-bottom: 0;
+}
+
+.buy-html-template .div-for-flex button {
+  border: 1px solid #8e8e8e;
+  padding: .5rem 1.3rem;
+  font-weight: 600;
+  color: #8e8e8e;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.buy-html-template .div-for-flex button span {
+  margin-left: 1rem;
+}
+
+.buy-html-template .div-for-flex button:hover {
+  color: #333333;
+  border-color: #333333;
+}
+
+.testimonial .for-d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.testimonial .for-d-flex .main-testimonial {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90%;
+  padding: 2rem;
+  border: 1.5px solid #cccccc;
+}
+
+.testimonial .for-d-flex .main-testimonial .img {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+}
+
+.testimonial .for-d-flex .main-testimonial .text {
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+}
+
+.testimonial .for-d-flex .main-testimonial .text h6 {
+  font-weight: 800;
+}
+
+.testimonial .for-d-flex .main-testimonial .text .designation {
+  color: #8e8e8e;
+}
+
+.testimonial .for-d-flex .main-testimonial .text .title {
+  color: #333333;
+}
+
+.testimonial .for-d-flex .main-testimonial .text .talk {
+  color: #8e8e8e;
+  font-size: .9rem;
+}
+
+.testimonial .for-d-flex .next-prev {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2rem 1rem;
+  border: 1px solid #8e8e8e;
+  background-color: #f8f8f8;
+}
+
+.testimonial .for-d-flex .next-prev .prev {
+  font-weight: 600;
+  color: #8e8e8e;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  cursor: pointer;
+}
+
+.testimonial .for-d-flex .next-prev .prev:hover {
+  color: #333333;
+}
+
+.testimonial .for-d-flex .next-prev .next {
+  font-weight: 600;
+  color: #8e8e8e;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  cursor: pointer;
+}
+
+.testimonial .for-d-flex .next-prev .next:hover {
+  color: #333333;
+}
+
+.contact-us {
+  padding-bottom: 5rem;
+  padding-top: 4rem;
+}
+
+.contact-us .contact-us-body {
+  border: 1.5px solid #8e8e8e;
+  padding: 5rem 0 3rem;
+  width: 98%;
+  margin: auto;
+  position: relative;
+}
+
+.contact-us .contact-us-body .top-text {
+  background-color: #ffffff;
+  position: absolute;
+  top: -6%;
+  left: 45%;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #333333;
+}
+
+.contact-us .contact-us-body form {
+  width: 60%;
+  margin: auto;
+}
+
+.contact-us .contact-us-body form .names {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact-us .contact-us-body form .names .first-name {
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%;
+}
+
+.contact-us .contact-us-body form .names .first-name input:focus {
+  border: none;
+  border-bottom: 2px solid #333333;
+}
+
+.contact-us .contact-us-body form .names .last-name {
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%;
+}
+
+.contact-us .contact-us-body form input {
+  border: none;
+  border-radius: none;
+  border-bottom: 2px solid #cccccc;
+  padding-left: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact-us .contact-us-body form input:focus {
+  border: none;
+  border-bottom: 2px solid #333333;
+}
+
+.contact-us .contact-us-body form textarea {
+  border: none;
+  border-radius: none;
+  padding-left: 2rem;
+  border-bottom: 2px solid #cccccc;
+}
+
+.contact-us .contact-us-body .button a {
+  text-decoration: none;
+  color: #8e8e8e;
+  border: 1px solid #8e8e8e;
+  padding: .5rem 1rem;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  font-weight: 600;
+}
+
+.contact-us .contact-us-body .button a span {
+  margin-left: 1rem;
+}
+
+.contact-us .contact-us-body .button a:hover {
+  color: #333333;
+  border-color: #333333;
+}
+
+footer {
+  background: url("../image/footer-bg.png") no-repeat center center;
+  background-size: cover;
+  padding-bottom: 2rem;
+}
+
+footer .heading {
+  width: 40%;
+  margin: auto;
+}
+
+footer .heading h1 {
+  margin-bottom: 3rem;
+}
+
+footer .heading p {
+  color: #ffffff;
+}
+
+footer .heading a {
+  text-decoration: none;
+  color: #ffffff;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  margin: 0 .3rem;
+  display: inline-block;
+  font-size: 1.5rem;
+  border: 1px solid #ffffff;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+footer .heading a:hover {
+  background-color: #ffffff;
+  color: #8e8e8e;
+}
+
+footer hr {
+  border: 1px solid #8e8e8e;
+}
+
+footer .navbar {
+  background-color: transparent;
+  margin-top: 2rem !important;
+}
+
+footer .navbar a {
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+footer .navbar li a {
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+footer .navbar li a:hover {
+  color: #8e8e8e;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  footer .heading a {
+    margin-top: 1rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .about-us .about-us-inner .img {
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
+  }
+  .about-us .about-us-inner .text p {
+    font-size: .9rem;
+  }
+  .about-us .about-us-inner .text button {
+    margin-top: 0;
+  }
+  .recent-work ul {
+    margin-bottom: 0;
+  }
+  .who-work-with-us .heading {
+    padding-bottom: 0 !important;
+  }
+  .best-pricing .heading {
+    padding-bottom: 0 !important;
+  }
+  .testimonial .for-d-flex .main-testimonial .img {
+    -ms-flex-preferred-size: 32%;
+        flex-basis: 32%;
+  }
+  .testimonial .for-d-flex .main-testimonial .text {
+    -ms-flex-preferred-size: 65%;
+        flex-basis: 65%;
+  }
+  .contact-us .contact-us-body .top-text {
+    left: 37%;
+  }
+  footer .heading {
+    width: 55%;
+  }
+  footer .heading a {
+    margin-top: 1rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .welcome-to-nipro .welcome-card {
+    margin: 2rem 4rem 0;
+  }
+  .welcome-to-nipro .welcome-card .icon-top {
+    left: 42%;
+  }
+  .about-us .about-us-inner .img {
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
+  }
+  .about-us .about-us-inner .text h1 {
+    margin-bottom: 0;
+  }
+  .about-us .about-us-inner .text p {
+    font-size: .8rem;
+  }
+  .about-us .about-us-inner .text button {
+    margin-top: 0;
+  }
+  .recent-work .heading {
+    padding-bottom: 0 !important;
+  }
+  .recent-work ul {
+    margin-bottom: 0;
+  }
+  .recent-work .tab-content .img {
+    margin: 2rem 5rem 0;
+  }
+  .why-choose-nipro .item-of-why-choose {
+    margin: 2rem 5rem;
+  }
+  .who-work-with-us .heading {
+    padding-bottom: 0 !important;
+  }
+  .who-work-with-us .card {
+    margin: 2rem 5rem;
+  }
+  .best-pricing .heading {
+    padding-bottom: 0 !important;
+  }
+  .best-pricing .best-pricing-item {
+    margin: 2rem 5rem;
+  }
+  .testimonial .for-d-flex .main-testimonial {
+    padding: 1rem;
+  }
+  .testimonial .for-d-flex .main-testimonial .img {
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+  }
+  .testimonial .for-d-flex .main-testimonial .text {
+    -ms-flex-preferred-size: 55%;
+        flex-basis: 55%;
+  }
+  .testimonial .for-d-flex .main-testimonial .text p {
+    margin-bottom: 0 !important;
+  }
+  .testimonial .for-d-flex .next-prev {
+    padding: 2rem .3rem;
+    margin-left: .5rem;
+  }
+  .contact-us {
+    padding-bottom: 2rem;
+  }
+  .contact-us .contact-us-body .top-text {
+    left: 34%;
+  }
+  .contact-us .contact-us-body form {
+    width: 75%;
+  }
+  footer .heading {
+    width: 65%;
+  }
+  footer .heading a {
+    margin-top: 1rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 575px) {
+  .banner .banner-text a {
+    padding: .5rem 1rem;
+    margin-bottom: 0;
+  }
+  .welcome-to-nipro .heading p {
+    padding: 0 1rem;
+  }
+  .welcome-to-nipro .welcome-card {
+    margin: 2rem 3rem;
+  }
+  .about-us {
+    padding: 0 !important;
+  }
+  .about-us .about-us-inner {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .about-us .about-us-inner .img {
+    -ms-flex-preferred-size: 60%;
+        flex-basis: 60%;
+    margin: auto;
+  }
+  .about-us .about-us-inner .text {
+    -ms-flex-preferred-size: 80%;
+        flex-basis: 80%;
+    margin: auto;
+    text-align: center;
+  }
+  .about-us .about-us-inner .text button {
+    padding: .5rem 1rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  .recent-work .heading {
+    padding-bottom: 0 !important;
+  }
+  .recent-work ul {
+    margin-bottom: 0;
+  }
+  .recent-work .tab-content .img {
+    margin: 2rem 3rem;
+  }
+  .why-choose-nipro .item-of-why-choose {
+    margin: 2rem 3rem;
+  }
+  .who-work-with-us .heading {
+    padding-bottom: 0 !important;
+  }
+  .who-work-with-us .card {
+    margin: 2rem 3rem;
+  }
+  .best-pricing .heading {
+    padding-bottom: 0 !important;
+  }
+  .best-pricing .best-pricing-item {
+    margin: 2rem 3rem;
+  }
+  .testimonial .for-d-flex .main-testimonial {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 1rem;
+  }
+  .testimonial .for-d-flex .main-testimonial .img {
+    -ms-flex-preferred-size: 60%;
+        flex-basis: 60%;
+    margin: auto;
+  }
+  .testimonial .for-d-flex .main-testimonial .text {
+    -ms-flex-preferred-size: 90%;
+        flex-basis: 90%;
+    margin: auto;
+    text-align: center;
+  }
+  .testimonial .for-d-flex .next-prev {
+    padding: 2rem .5rem;
+    margin-left: 1rem;
+  }
+  .contact-us {
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
+  .contact-us .contact-us-body {
+    width: 85%;
+    padding: 3rem 0 2rem;
+  }
+  .contact-us .contact-us-body .top-text {
+    left: 25%;
+  }
+  .contact-us .contact-us-body form {
+    width: 85%;
+  }
+  .contact-us .contact-us-body form .names {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  footer {
+    padding-bottom: 0;
+  }
+  footer .heading {
+    width: 85%;
+  }
+  footer .heading a {
+    margin-top: 1rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

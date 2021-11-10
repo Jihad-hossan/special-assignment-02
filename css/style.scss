@@ -1,0 +1,869 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+$color1: #ffffff;
+$color2: #333333;
+$color3: #8e8e8e;
+$color4-bg: #f8f8f8;
+$color5-border: #cccccc;
+
+h1,h2,h3, h4, h5, h6, button, a {
+    font-family: 'Lato', sans-serif;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+}
+// navbar start here
+.navbar{
+    padding-top: 0;
+    background-color: $color1;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    .navbar-brand{
+        padding-top: 0;
+    }
+    .collapse{
+        .navbar-nav{
+            .nav-item{
+                .nav-link{
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    transition: .5s ease;
+
+                    &:hover{
+                        color: $color2;
+                    }
+                }
+            }
+        }
+    }
+}
+// navbar end here
+
+// banner section start 
+.banner{
+    background: url('../image/banner-bg.png') no-repeat center center;
+    background-size: 100% 100%;
+    
+    .banner-text{
+        h1{
+            color: $color1;
+            font-weight: 600;
+        }
+        p{
+            padding-bottom: 3rem;
+            color: $color1;
+        }
+        a{
+            text-decoration: none;
+            padding: .5rem 1.5rem;
+            background-color: $color1;
+            color: $color3;
+            font-weight: 600;
+            border: 1px solid $color1;
+            display: inline-block;
+            margin-bottom: 5rem;
+            transition: .5s ease;
+
+            span{
+                margin-left: 1rem;
+            }
+            &:hover{
+                color: $color2;
+                border-color: $color2;
+            }
+
+        }
+    }
+}
+// banner section end
+
+// welcome section start 
+.welcome-to-nipro{
+
+    .welcome-card{
+        border: 1px solid $color5-border;
+        padding: 4rem 1.3rem;
+        margin-top: 2rem;
+        transition: .4s;
+        position: relative;
+
+        .icon-top{
+            position: absolute;
+            top: -5%;
+            left: 40%;
+            background-color: $color1;
+        }
+        p{
+            color: $color3;
+        }
+        a{
+            text-decoration: none;
+            color: $color3;
+            margin-top: 1.5rem;
+            display: inline-block;
+            cursor: pointer;
+            transition: .4s;
+            font-weight: 600;
+
+            span{
+                padding-left: 1rem;
+                display: inline-block;
+            }
+        }
+        &:hover{
+            border-color: $color2;
+        }
+        &:hover a{
+            color: $color2;
+        }
+    }
+}
+// welcome section end
+
+// about section start
+.about-us{
+    .about-us-inner{
+        display: flex;
+        justify-content: space-between;
+
+        .img{
+            flex-basis: 40%;
+        }
+        .text{
+            flex-basis: 50%;
+            p{
+                color: $color3;
+            }
+            button{
+                font-weight: 600;
+                color: $color3;
+                padding: .5rem 1.5rem;
+                border: 1px solid $color3;
+                border-radius: none;
+                margin-top: 2rem;
+                background: transparent;
+                transition: .4s;
+                span{
+                    margin-left: 1rem;
+                }
+                &:hover{
+                    color: $color2;
+                    border-color: $color2;
+                }
+            }
+        }
+    }
+}
+// about us section end
+
+// recent work start 
+.recent-work{
+    background-color: $color4-bg;
+    padding-bottom: 5rem;
+    ul{
+        justify-content: center;
+        margin-bottom: 3rem;
+        li{
+            a{
+                color: $color3;
+
+                &:hover, &:focus{
+                    color: $color2;
+                    border: 1px solid $color2;
+                }
+            }
+        }
+    }
+    .tab-content{
+        .img{
+            margin-top: 2rem;
+            position: relative; 
+            .plus-icon{
+                position: absolute;
+                top: 45%;
+                left: 45%;
+                transition: translate(-50%, -50%);
+                transition: .5s ease;
+                opacity: 0;
+            }
+            .project-tile{
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                padding-left: 3rem;
+                padding-top: .5rem;
+                background-color: $color1;
+                transition: .5s ease;
+                opacity: 0;
+                h6{
+                    font-weight: 600;
+                }
+                p{
+                    color: $color3;
+                }
+            }
+            .recent-img{
+                width: 100%;
+            }
+
+
+            &:hover{
+                .plus-icon{
+                    opacity: 1;
+                }
+                .project-tile{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+// recent work end
+
+// why choose start
+.why-choose-nipro{
+    padding-bottom: 3rem;
+    .item-of-why-choose{
+        margin-bottom: 2rem;
+        h6{ 
+            color: $color3;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            transition: .3s;
+
+            span{
+                margin-right: 1.5rem;
+            }
+        }
+        p{
+            color: $color3;
+        }
+        .hr{
+            border: 1.5px solid $color3;
+            transition: .3s;
+        }
+
+        &:hover{
+            h6{
+                color: $color2;
+            }
+            p{
+                color: $color2;
+            }
+            .hr{
+                border-color: black;
+            }
+        }
+    }
+}
+// why choose end
+
+// who work with us start
+.who-work-with-us{
+    background: url('../image/who-work-with-bg.png') no-repeat center center;
+    background-size: cover;
+    padding-bottom: 5rem;
+
+    .card{
+        border: none;
+        margin-top: 2rem;
+    }
+}
+// who work with us end
+
+// best pricing start
+.best-pricing{
+    padding-bottom: 3rem;
+    .best-pricing-item{
+        border: 2px solid $color5-border;
+        padding: 3rem 2rem 2rem;
+        margin-top: 2rem;
+        transition: .5s ease;
+        position: relative;
+        cursor: pointer;
+
+        .top{
+            position: absolute;
+            top: -3%;
+            left: 10%;
+            background: $color1;
+            font-weight: 700;
+        }
+        .link{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        h2{ 
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            span{
+                font-size: 1rem;
+                color: $color3;
+            }
+        }
+        p{
+            color: $color3;
+        }
+        button{
+            width: 100%;
+            border: 1px solid $color5-border;
+            margin-top: 1.5rem;
+            padding: .5rem;
+            background: transparent;
+            color: $color3;
+            font-weight: 600;
+            transition: .5s ease;
+
+            span{
+                margin-left: 1rem;
+            }
+        }
+        &:hover{
+            border-color: $color3;
+
+            button{
+                border-color: $color2;
+                color: $color2;
+            }
+        }
+    }
+}
+// best pricing end
+
+// buy html template start
+.buy-html-template{
+    background-color: $color4-bg;
+    padding: 2rem 0;
+
+    .div-for-flex{
+        justify-content: space-between;
+        align-items: center;
+
+        p{
+            margin-bottom: 0;
+        }
+        button{
+            border: 1px solid $color3;
+            padding: .5rem 1.3rem;
+            font-weight: 600;
+            color: $color3;
+            transition: .5s ease;
+            span{
+                margin-left: 1rem;
+            }
+            &:hover{
+                color: $color2;
+                border-color: $color2;
+            }
+        }
+    }
+}
+// buy html template end
+
+// testimonial start 
+.testimonial{
+    .for-d-flex{
+        display: flex;
+        justify-content: space-between;
+        .main-testimonial{
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+            padding: 2rem;
+            border: 1.5px solid $color5-border;
+
+            .img{
+                flex-basis: 20%;
+            }
+            .text{
+                flex-basis: 70%;
+                h6{
+                    font-weight: 800;
+                }
+                .designation{
+                    color: $color3;
+                }
+                .title{
+                    color: $color2;
+                }
+                .talk{
+                    color: $color3;
+                    font-size: .9rem;
+                }
+            }
+        }
+        .next-prev{
+            writing-mode: vertical-rl;
+            display: flex;
+            justify-content: space-between;
+            padding: 2rem 1rem;
+            border: 1px solid $color3;
+            background-color: $color4-bg;
+            .prev{
+                font-weight: 600;
+                color: $color3;
+                transition: .5s ease;
+                cursor: pointer;
+
+                &:hover{
+                    color: $color2;
+                }
+            }
+            .next{
+                font-weight: 600;
+                color: $color3;
+                transition: .5s ease;
+                cursor: pointer;
+                &:hover{
+                    color: $color2;
+                }
+            }
+        }
+    }
+}
+// testimonial end
+
+// contact us start 
+.contact-us{
+    padding-bottom: 5rem;
+    padding-top: 4rem;
+    .contact-us-body{
+        border: 1.5px solid $color3;
+        padding: 5rem 0 3rem;
+        width: 98%;
+        margin: auto;
+        position: relative;
+
+        .top-text{
+            background-color: $color1;
+            position: absolute;
+            top: -6%;
+            left: 45%;
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: $color2;
+        }
+
+        form{
+            width: 60%;
+            margin: auto;
+
+            .names{
+                display: flex;
+                justify-content: space-between;
+
+                .first-name{
+                    flex-basis: 48%;
+                    input{
+                        &:focus{
+                            border: none;
+                            border-bottom: 2px solid $color2;
+                        }
+                    }
+                }
+                .last-name{
+                    flex-basis: 48%;
+                }
+
+            }
+            input{
+                border: none;
+                border-radius: none;
+                border-bottom: 2px solid $color5-border;
+                padding-left: 2rem;
+                margin-bottom: 1.5rem;
+
+                &:focus{
+                    border: none;
+                    border-bottom: 2px solid $color2;
+                }
+            }
+            textarea{
+                border: none;
+                border-radius: none;
+                padding-left: 2rem;
+                border-bottom: 2px solid $color5-border;
+            }
+        }
+        .button{
+            a{
+                text-decoration: none;
+                color: $color3;
+                border: 1px solid $color3;
+                padding: .5rem 1rem;
+                transition: .5s ease;
+                font-weight: 600;
+
+                span{
+                    margin-left: 1rem;
+                }
+                &:hover{
+                    color: $color2;
+                    border-color: $color2;
+                }
+            }
+        }
+    }
+}
+// contact us end
+
+// footer section start here
+footer{
+    background: url('../image/footer-bg.png') no-repeat center center;
+    background-size: cover;
+    padding-bottom: 2rem;
+    .heading{
+        width: 40%;
+        margin: auto;
+        h1{
+            margin-bottom: 3rem;
+        }
+        p{
+            color: $color1;
+        }
+
+        a{
+            text-decoration: none;
+            color: $color1;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            margin: 0 .3rem;
+            display: inline-block;
+            font-size: 1.5rem;
+            border: 1px solid $color1;
+            transition: .5s ease;
+
+            &:hover{
+                background-color: $color1;
+                color: $color3;
+            }
+        }
+    }
+    hr{
+        border: 1px solid $color3;
+    }
+    .navbar{
+        background-color: transparent;
+        margin-top: 2rem !important;
+
+        a{
+            color: $color1;
+            font-size: 1rem;
+        }
+        li{
+            a{ 
+               transition: .5s ease;
+               &:hover{
+                   color: $color3;
+            }
+        }
+     }
+  }
+}
+// footer section end 
+
+// media query for 992px to 1199px
+@media (min-width: 992px) and (max-width: 1199px){
+    footer{
+        .heading{
+            a{
+                margin-top: 1rem;
+            }
+        }
+    }
+}
+// media query for 768px to 991px 
+@media (min-width: 768px) and (max-width: 991px){
+    .about-us{
+        .about-us-inner{
+            .img{
+                flex-basis: 48%;
+            }
+            .text{
+                p{
+                    font-size: .9rem;
+                }
+                button{
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+    .recent-work{
+        ul{
+            margin-bottom: 0;
+        }
+    }
+    .who-work-with-us{
+        .heading{
+            padding-bottom: 0 !important;
+        }
+    }
+    .best-pricing{
+        .heading{
+            padding-bottom: 0 !important;
+        }
+    }
+    .testimonial{
+        .for-d-flex{
+            .main-testimonial{
+                .img{
+                    flex-basis: 32%;
+                }
+                .text{
+                    flex-basis: 65%;
+                }
+            }
+        }
+    }
+    .contact-us{
+        .contact-us-body{
+            .top-text{
+                left: 37%;
+            }
+        }
+    }
+    footer{
+        .heading{
+            width: 55%;
+            a{
+                margin-top: 1rem;
+            }
+        }
+    }
+}
+// media for 576px to 767px
+@media (min-width: 576px) and (max-width: 767px){
+    .welcome-to-nipro{
+        .welcome-card{
+            margin: 2rem 4rem 0;
+            .icon-top{
+                left: 42%;
+            }
+        }
+    }
+    .about-us{
+        .about-us-inner{
+            .img{
+                flex-basis: 48%;
+            }
+            .text{
+                h1{
+                    margin-bottom: 0;
+                }
+                p{
+                    font-size: .8rem;
+                }
+                button{
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+    .recent-work{
+        .heading{
+            padding-bottom: 0 !important;
+        }
+        ul{
+            margin-bottom: 0;
+        }
+        .tab-content{
+            .img{
+                margin: 2rem 5rem 0;
+            }
+        }
+    }
+    .why-choose-nipro{
+        .item-of-why-choose{
+            margin: 2rem 5rem;
+        }
+    }
+    .who-work-with-us{
+        .heading{
+            padding-bottom: 0 !important;
+        }
+        .card{
+            margin: 2rem 5rem;
+        }
+    }
+    .best-pricing{
+        .heading{
+            padding-bottom: 0 !important;
+        }
+        .best-pricing-item{
+            margin: 2rem 5rem;
+        }
+    }
+    .testimonial{
+        .for-d-flex{
+            .main-testimonial{
+                padding: 1rem;
+                .img{
+                    flex-basis: 40%;
+                }
+                .text{
+                    flex-basis: 55%;
+                    p{
+                        margin-bottom: 0 !important;
+                    }
+                }
+            }
+            .next-prev{
+                padding: 2rem .3rem;
+                margin-left: .5rem;
+            }
+        }
+    }
+    .contact-us{
+        padding-bottom: 2rem;
+        .contact-us-body{
+            .top-text{
+                left: 34%;
+            }
+            form{
+                width: 75%;
+            }
+        }
+    }
+    footer{
+        .heading{
+            width: 65%;
+            a{
+                margin-top: 1rem;
+            }
+        }
+    }
+}
+// media for 320px to 575px
+@media (min-width: 320px) and (max-width: 575px){
+    .banner{
+        .banner-text{
+            a{
+                padding: .5rem 1rem;
+                margin-bottom: 0;
+            }
+        }
+    }
+    .welcome-to-nipro{
+        .heading{
+            p{
+                padding: 0 1rem;
+            }
+        }
+        .welcome-card{
+            margin: 2rem 3rem;
+        }
+    }
+    .about-us{
+        padding: 0 !important;
+        .about-us-inner{
+            flex-wrap: wrap;
+
+            .img{
+                flex-basis: 60%;
+                margin: auto;
+            }
+            .text{
+                flex-basis: 80%;
+                margin: auto;
+                text-align: center;
+                button{
+                    padding: .5rem 1rem;
+                    margin-top: 0;
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
+    .recent-work{
+        .heading{
+            padding-bottom: 0 !important;
+        }
+        ul{
+            margin-bottom: 0;
+        }
+        .tab-content{
+            .img{
+                margin: 2rem 3rem;
+            }
+        }
+    }
+    .why-choose-nipro{
+        .item-of-why-choose{
+            margin: 2rem 3rem;
+        }
+    }
+    .who-work-with-us{
+        .heading{
+            padding-bottom: 0 !important;
+        }
+        .card{
+            margin: 2rem 3rem;
+        }
+    }
+    .best-pricing{
+        .heading{
+            padding-bottom: 0 !important;
+        }
+        .best-pricing-item{
+            margin: 2rem 3rem;
+        }
+    }
+    .testimonial{
+        .for-d-flex{
+            .main-testimonial{
+                flex-wrap: wrap;
+                padding: 1rem;
+                .img{
+                    flex-basis: 60%;
+                    margin: auto;
+                }
+                .text{
+                    flex-basis: 90%;
+                    margin: auto;
+                    text-align: center;
+                }
+            }
+            .next-prev{
+                padding: 2rem .5rem;
+                margin-left: 1rem;
+            }
+        }
+    }
+    .contact-us{
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+        .contact-us-body{
+            width: 85%;
+            padding: 3rem 0 2rem;
+            .top-text{
+                left: 25%;
+            }
+            form{
+                width: 85%;
+                .names{
+                    flex-wrap: wrap;
+                }
+            }
+        }
+    }
+    footer{
+        padding-bottom: 0;
+        .heading{
+            width: 85%;
+
+            a{
+                margin-top: 1rem;
+            }
+        }
+    }
+}
