@@ -77,6 +77,12 @@ p{
             }
 
         }
+        .prev-next{
+            padding-bottom: 0;
+            margin-bottom: 0;
+            color: $color2;
+            font-weight: 600;
+        }
     }
 }
 // banner section end
@@ -745,22 +751,43 @@ footer{
 }
 // media for 320px to 575px
 @media (min-width: 320px) and (max-width: 575px){
+    .navbar{
+        .navbar-brand{
+            img{
+                width: 70% !important;
+            }
+        }
+    }
     .banner{
         .banner-text{
+            h1{
+                padding: 2rem 0 !important;
+            }
+            p{
+                padding-bottom: 1.5rem;
+            }
             a{
                 padding: .5rem 1rem;
                 margin-bottom: 0;
+            }
+            .prev-next{
+                margin-top: .5rem;
+                font-size: .9rem;
             }
         }
     }
     .welcome-to-nipro{
         .heading{
+            img{
+                width: 1.5px;
+            }
             p{
                 padding: 0 1rem;
             }
         }
         .welcome-card{
-            margin: 2rem 3rem;
+            margin: 1rem 2rem;
+            padding: 4rem 1.3rem 1rem;
         }
     }
     .about-us{
@@ -787,42 +814,76 @@ footer{
     .recent-work{
         .heading{
             padding-bottom: 0 !important;
+            img{
+                width: 1.5px;
+            }
         }
         ul{
             margin-bottom: 0;
         }
         .tab-content{
             .img{
-                margin: 2rem 3rem;
+                margin: 1rem 2rem;
+                .plus-icon{
+                    left: 37%;
+                    top: 42%;
+                }
             }
         }
     }
     .why-choose-nipro{
+        .heading{
+            img{
+                width: 1.5px;
+            }
+        }
         .item-of-why-choose{
-            margin: 2rem 3rem;
+            margin: 1rem 2rem;
         }
     }
     .who-work-with-us{
         .heading{
             padding-bottom: 0 !important;
+            img{
+                width: 1.5px;
+            }
         }
         .card{
-            margin: 2rem 3rem;
+            margin: 1rem 2rem;
         }
     }
     .best-pricing{
         .heading{
             padding-bottom: 0 !important;
+            img{
+                width: 1.5px;
+            }
         }
         .best-pricing-item{
-            margin: 2rem 3rem;
+            margin: 1rem 2rem;
+        }
+    }
+    .buy-html-template{
+        padding: 0;
+        .div-for-flex{
+            p{
+                font-size: .9rem;
+            }
+            button{
+                font-size: .9rem;
+                padding: .4rem;
+
+                span{
+                    margin-left: 0;
+                }
+            }
         }
     }
     .testimonial{
         .for-d-flex{
             .main-testimonial{
                 flex-wrap: wrap;
-                padding: 1rem;
+                padding: .5rem;
                 .img{
                     flex-basis: 60%;
                     margin: auto;
@@ -831,6 +892,13 @@ footer{
                     flex-basis: 90%;
                     margin: auto;
                     text-align: center;
+                    .designation{
+                        margin-bottom: 0;
+                    }
+                    .talk{
+                        font-size: .8rem;
+                        margin-bottom: 0;
+                    }
                 }
             }
             .next-prev{
@@ -860,9 +928,22 @@ footer{
         padding-bottom: 0;
         .heading{
             width: 85%;
+            img{
+                width: 1.5px;
+            }
 
             a{
                 margin-top: 1rem;
+            }
+        }
+        .navbar{
+            .navbar-brand{
+                white-space: pre-wrap;
+            }
+            button{
+                span{
+                    display: none;
+                }
             }
         }
     }
